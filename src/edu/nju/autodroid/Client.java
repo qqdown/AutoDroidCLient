@@ -23,7 +23,7 @@ public class Client extends UiAutomatorTestCase {
 		String jarName = "autodroidclient";
 		String testClass = "edu.nju.autodroid.Client";
 		String testName = "testMain";
-		String androidId = "3";
+		String androidId = "6";
 		new UiAutomatorHelper(jarName, testClass, testName, androidId);
 	}
 	

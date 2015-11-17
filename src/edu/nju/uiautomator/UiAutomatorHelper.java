@@ -15,7 +15,7 @@ import java.io.OutputStreamWriter;
 public class UiAutomatorHelper {
 
 	// 以下参数需要配置，用例集id，用例id，安卓id
-	private static String android_id = "3";
+	private static String android_id = "6";
 	private static String jar_name = "";
 	private static String test_class = "";
 	private static String test_name = "";
@@ -23,8 +23,9 @@ public class UiAutomatorHelper {
 	// 工作空间不需要配置，自动获取工作空间目录
 	private static String workspace_path;
 	
-	private final String android = "/home/ysht/Documents/android-sdk-linux/tools/android";
-	private final String adb = "/home/ysht/Documents/android-sdk-linux/platform-tools/adb";
+	private final String android = "E:\\Program Files\\android-sdk-windows\\tools\\android.bat";
+	private final String adb = "E:\\Program Files\\android-sdk-windows\\platform-tools\\adb.exe";
+	private final String ant = "E:\\Program Files\\apache-ant-1.9.6\\bin\\ant.bat";
 
     public static void main(String[] args) {
 		
@@ -159,7 +160,7 @@ public class UiAutomatorHelper {
 			execCmd("ant");
 			return;
 		}
-		execCmd("cmd /c ant");
+		execCmd(ant);
 	}
 
 	// 4---push jar
